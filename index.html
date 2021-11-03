@@ -131,7 +131,7 @@
 			document.getElementById('jam-dinding').innerHTML = pukul+':'+menit+':'+detik;
 		}
 		
-		function addTr(elem,tanggal){
+		function addTr(elem,arrayPeserta){
 			var now = new Date();
 			var counter = new Date(now.getFullYear() , now.getMonth(), now.getDate() , 9 , 0 , 0);
 			for(var n=0;n<45;n++){
@@ -233,9 +233,9 @@
 			var updateJamdinding = setInterval(jamdinding, 1000);
 			//untuk tabel 
 			var table17 = document.getElementById('17').getElementsByTagName('tbody')[0];
-			addTr(table17 , "17 Des");
+			addTr(table17 , array17);
 			var table18 = document.getElementById('18').getElementsByTagName('tbody')[0];
-			addTr(table18 , "18 Des");
+			addTr(table18 , array18);
 			//untuk div
 			document.getElementById('div18').style.display = 'none';
 			//untuk span
