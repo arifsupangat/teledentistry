@@ -208,7 +208,7 @@
 				}
 				var node3 = document.createTextNode(pukulAkhir+':'+menitAkhir+':'+detikAkhir);
 				td3.appendChild(node3);
-				if(now.getTime() >= counterAwal.getTime() && now.getTime < counterAkhir.getTime()){
+				if(now.getTime() >= counterAwal.getTime() && now.getTime() < counterAkhir.getTime()){
 					var node4 = document.createTextNode("Login");
 					td4.appendChild(node4);
 					td1.setAttribute("style","background-color:green;");
@@ -229,13 +229,13 @@
 		function counter17(){
 			var elem = document.getElementById('17').getElementsByTagName('tbody')[0];
 			var now = new Date();
-			var counter = new Date(now.getFullYear() , now.getMonth(), now.getDate() , 9 , 0 , 0);
+			var counter = new Date(now.getFullYear() , now.getMonth(), now.getDate() , 5 , 0 , 0);
 			for(var n=0;n<45;n++){
 				var counterAwal = new Date(counter);
 				counterAwal.setTime(counter.getTime() + (((13 * 60 * 1000) + (20 * 1000)) * n ));
 				var counterAkhir = new Date(counterAwal)
 				counterAkhir.setTime(counterAkhir.getTime() + (13 * 60 * 1000) + (20 * 1000));
-				if(now.getTime() >= counterAwal.getTime() && now.getTime < counterAkhir.getTime()){
+				if(now.getTime() >= counterAwal.getTime() && now.getTime() < counterAkhir.getTime()){
 					elem.getElementsByTagName('tr')[n].getElementsByTagName('td')[3].innerHTML = "Login";
 					elem.getElementsByTagName('tr')[n].getElementsByTagName('td')[0].setAttribute("style","background-color:green;");
 					elem.getElementsByTagName('tr')[n].getElementsByTagName('td')[1].setAttribute("style","background-color:green;");
@@ -254,13 +254,13 @@
 		function counter18(){
 			var elem = document.getElementById('18').getElementsByTagName('tbody')[0];
 			var now = new Date();
-			var counter = new Date(now.getFullYear() , now.getMonth(), now.getDate() , 9 , 0 , 0);
+			var counter = new Date(now.getFullYear() , now.getMonth(), now.getDate() , 5 , 0 , 0);
 			for(var n=0;n<45;n++){
 				var counterAwal = new Date(counter);
 				counterAwal.setTime(counter.getTime() + (((13 * 60 * 1000) + (20 * 1000)) * n ));
 				var counterAkhir = new Date(counterAwal)
 				counterAkhir.setTime(counterAkhir.getTime() + (13 * 60 * 1000) + (20 * 1000));
-				if(now.getTime() >= counterAwal.getTime() && now.getTime < counterAkhir.getTime()){
+				if(now.getTime() >= counterAwal.getTime() && now.getTime() < counterAkhir.getTime()){
 					elem.getElementsByTagName('tr')[n].getElementsByTagName('td')[3].innerHTML = "Login";
 					elem.getElementsByTagName('tr')[n].getElementsByTagName('td')[0].setAttribute("style","background-color:green;");
 					elem.getElementsByTagName('tr')[n].getElementsByTagName('td')[1].setAttribute("style","background-color:green;");
