@@ -143,7 +143,7 @@
 				var node1 = document.createTextNode(arrayPeserta[n]);
 				td1.appendChild(node1);
 				var counterAwal = new Date(counter);
-				counterAwal.setTime(counter.getTime() + (((30 * 60 * 1000) + (20 * 1000)) * n ));
+				counterAwal.setTime(counter.getTime() + (((13 * 60 * 1000) + (20 * 1000)) * n ));
 				var jamAwal = counterAwal.getHours();
 				var mntAwal = counterAwal.getMinutes();
 				var secAwal = counterAwal.getSeconds();
@@ -176,7 +176,7 @@
 				var node2 = document.createTextNode(pukulAwal+':'+menitAwal+':'+detikAwal);
 				td2.appendChild(node2);
 				var counterAkhir = new Date(counterAwal)
-				counterAkhir.setTime(counterAkhir.getTime() + (30 * 60 * 1000) + (20 * 1000));
+				counterAkhir.setTime(counterAkhir.getTime() + (13 * 60 * 1000) + (20 * 1000));
 				var jamAkhir = counterAkhir.getHours();
 				var mntAkhir = counterAkhir.getMinutes();
 				var secAkhir = counterAkhir.getSeconds();
